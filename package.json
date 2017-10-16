@@ -10,7 +10,8 @@
     "start": "node ./server/file.js && nuxt start",
     "generate": "node ./server/file.js && nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "npm run lint"
+    "precommit": "npm run lint",
+    "deploy": "git add . && git commit -m 'new'"
   },
   "dependencies": {
     "less": "^3.0.0-alpha.3",
