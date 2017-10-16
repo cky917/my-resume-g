@@ -1,6 +1,5 @@
 const vueLoaderConfig = require('./vue-loader.conf')
-const githubUserName = 'cky917'
-const githubProjectName = 'my-resume-g'
+const config = require('./config')
 
 module.exports = {
   /*
@@ -17,7 +16,7 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     script: [
-      { src: `https://${githubUserName}.github.io/${githubProjectName}/dist/js/remfix.min.js` }
+      { src: `https://${config.githubUserName}.github.io/${config.githubProjectName}/dist/js/remfix.min.js` }
     ]
   },
   css: [
