@@ -4,6 +4,8 @@
 
 基于vue + nuxt + nodejs， 只需要更改 `resumeData.yaml` 配置文件，再执行`nuxt run generate`即可生成一个网页版简历
 
+[demo](https://cky917.github.io/my-resume-g/dist/)
+
 ## Build Setup
 
 ``` bash

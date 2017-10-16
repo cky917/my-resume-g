@@ -5,4 +5,9 @@ node_modules
 npm-debug.log
 
 # Nuxt build
+
 .nuxt
+
+**/.DS_Store
+
+.DS_Store
