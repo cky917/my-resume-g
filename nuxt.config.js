@@ -13,7 +13,7 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Nuxt.js project' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: `https://${config.githubUserName}.github.io/${config.githubProjectName}/dist/favicon.ico` }
     ],
     script: [
       { src: `https://${config.githubUserName}.github.io/${config.githubProjectName}/dist/js/remfix.min.js` }
