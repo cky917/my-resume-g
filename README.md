@@ -25,7 +25,7 @@ $ npm run generate
 
 配置github `./config.json`
 
-```json
+```javascript
 {
     "githubUserName": "cky917", //你的github用户名
     "githubProjectName": "my-resume-g" //这个项目在github的名称，需要提前建好，并创建一个gh-pages分支
