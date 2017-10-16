@@ -23,6 +23,25 @@ $ npm start
 $ npm run generate
 ```
 
+配置github `./config.json`
+
+```json
+{
+    "githubUserName": "cky917", //你的github用户名
+    "githubProjectName": "my-resume-g" //这个项目在github的名称，需要提前建好，并创建一个gh-pages分支
+}
+```
+
+发布到github gh-pages分支
+
+```bash
+
+npm run deploy
+
+```
+
+通过`https://你的github用户名.github.io/github项目名/dist/`访问
+
 ## 后续可能会实现的功能
 
 - preview支持图片预览
