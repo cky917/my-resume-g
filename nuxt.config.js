@@ -30,6 +30,7 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    publicPath: 'https://cky917.github.io/my-resume-g/dist/',
     loaders: [
       {
         test: /\.vue$/,
