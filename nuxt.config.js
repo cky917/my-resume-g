@@ -15,7 +15,7 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     script: [
-      { src: 'http://resume.chenkeyi.com/static/js/remfix.min.js' }
+      { src: 'https://cky917.github.io/my-resume-g/dist/js/remfix.min.js' }
     ]
   },
   css: [
