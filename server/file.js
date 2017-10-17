@@ -7,7 +7,7 @@ const actions = {
   getYmlData () {
     return new Promise((resolve, reject) => {
       try {
-        let fileData = fs.readFileSync(path.resolve(__dirname, '../resumeData.yaml'), 'utf8')
+        let fileData = fs.readFileSync(path.resolve(__dirname, '../resume/resumeData.yaml'), 'utf8')
         let data = yaml.load(fileData)
         resolve(data)
       } catch (e) {
