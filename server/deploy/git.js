@@ -22,7 +22,7 @@ deployGit.deployTogit = () => {
     }
     // Copy files to release dir 
     console.info(`clear ${deployFolderName}...`)
-    shell.rm('-f', `${deployFolderName}/*`)
+    shell.rm('-rf', `${deployFolderName}/*`)
 
     console.info(`copy dist/ to ${deployFolderName}...`)
     shell.cp('-R', 'dist/*', `${deployFolderName}/`)
