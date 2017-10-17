@@ -1,5 +1,6 @@
 const vueLoaderConfig = require('./vue-loader.conf')
 const config = require('./config')
+const gitHubHttpUrl = `https://${config.githubUserName}.github.io/${config.githubProjectName}/`
 
 module.exports = {
   /*
@@ -13,10 +14,10 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Nuxt.js project' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: `https://${config.githubUserName}.github.io/${config.githubProjectName}/dist/favicon.ico` }
+      { rel: 'icon', type: 'image/x-icon', href: `${gitHubHttpUrl}/favicon.ico` }
     ],
     script: [
-      { src: `https://${config.githubUserName}.github.io/${config.githubProjectName}/dist/js/remfix.min.js` }
+      { src: `${gitHubHttpUrl}/js/remfix.min.js` }
     ]
   },
   css: [
@@ -31,7 +32,7 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    publicPath: 'https://cky917.github.io/my-resume-g/dist/',
+    publicPath: gitHubHttpUrl,
     loaders: [
       {
         test: /\.vue$/,

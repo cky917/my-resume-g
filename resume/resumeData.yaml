@@ -90,7 +90,7 @@ contentData:
           - nodejs
           - leancloud(用于数据存储)
       - title: 简单的配置化生成网页版简历系统
-        previewLink: https://cky917.github.io/my-resume-g/dist/
+        previewLink: https://cky917.github.io/my-resume-g
         github: http://github.com/cky917/my-resume-g
         content: 基于nuxt(vue)搭建的可配置化生成静态简历页面的系统，可以通过简单的Yml配置文件配置内容后通过命令自动生成简历页面，并可以托管到gitpage上。
         labels: 

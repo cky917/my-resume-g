@@ -4,7 +4,7 @@
 
 基于vue + nuxt + nodejs， 只需要更改 `/resume/resumeData.yaml` 配置文件，再执行`nuxt run generate`即可生成一个网页版简历
 
-[demo](https://cky917.github.io/my-resume-g/dist/)
+[demo](https://cky917.github.io/my-resume-g)
 
 ## Build Setup
 
@@ -28,7 +28,13 @@ $ npm run generate
 }
 ```
 
-发布到github gh-pages分支
+初次执行时先执行
+
+```bash
+npm run setup
+```
+
+发布到github gh-pages分支，参考的hexo -g的实现
 
 ```bash
 
@@ -36,7 +42,7 @@ npm run deploy
 
 ```
 
-通过`https://你的github用户名.github.io/github项目名/dist/`访问
+通过`https://你的github用户名.github.io/github项目名`访问
 
 ## 后续可能会实现的功能
 

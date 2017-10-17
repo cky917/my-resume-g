@@ -5,7 +5,8 @@ const path = require('path')
 const fs = require('fs')
 const myConfig = require('../../my.config')
 const deployFolderName = myConfig.deployFolderName
-const deployDir = path.resolve(__dirname, deployFolderName)
+const deployDir = path.resolve(__dirname, '../../' + deployFolderName)
+const releaseDir = path.resolve(__dirname, '../../dist')
 const gitConfig = require('../../config')
 
 const deployGit = {}
@@ -24,8 +25,8 @@ deployGit.deployTogit = () => {
     console.info(`clear ${deployFolderName}...`)
     shell.rm('-rf', `${deployFolderName}/*`)
 
-    console.info(`copy dist/ to ${deployFolderName}...`)
-    shell.cp('-R', 'dist/*', `${deployFolderName}/`)
+    console.info(`copy ${releaseDir} to ${deployFolderName}...`)
+    shell.cp('-R', `${releaseDir}/*`, `${deployFolderName}`)
 
     deployGit.push()
   })
@@ -38,13 +39,16 @@ deployGit.setup = () => {
   shell.exec('git init')
   shell.exec('git add -A')
   shell.exec('git commit -m "First commit"')
+  console.info('setup seccess!')
 }
 
 deployGit.push = (repo) => {
   let time = deployGit.getTime()
 
+  shell.cd(deployDir)
   shell.exec('git add -A')
-  shell.exec(`git commit -m "server-commit:${time}"`)
+  shell.exec(`git commit -m "${time}"`)
+  console.log('commited')
   shell.exec(`git push -u git@github.com:${gitConfig.githubUserName}/${gitConfig.githubProjectName}.git HEAD:gh-pages --force`)
 }
 
@@ -56,8 +60,11 @@ deployGit.getTime = () => {
   let year = time.getFullYear()
   let month = time.getMonth() + 1
   let day = time.getDate()
+  let hour = time.getHours()
+  let minute = time.getMinutes()
+  let second = time.getSeconds()
 
-  return `server updata: ${year}-${add0(month)}-${add0(day)}`
+  return `server update: ${year}-${add0(month)}-${add0(day)} ${add0(hour)}:${add0(minute)}:${add0(second)}`
 }
 
 module.exports = deployGit
