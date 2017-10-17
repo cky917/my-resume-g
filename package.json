@@ -11,7 +11,7 @@
     "generate": "node ./server/file.js && nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint",
-    "deploy": "npm run generate &&  git add . && git commit -m 'new complie' && git checkout gh-pages && git merge master && git push origin gh-pages && git checkout master && git push origin master"
+    "deploy": "node ./server/deploy"
   },
   "dependencies": {
     "less": "^3.0.0-alpha.3",
