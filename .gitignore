@@ -12,5 +12,6 @@ npm-debug.log
 
 .DS_Store
 
-dist*/
+dist/
 data/
+.deploy*/
