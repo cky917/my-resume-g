@@ -2,7 +2,7 @@
 
 一个简单的配置化简历生成静态页面系统 author:chenkeyi
 
-基于vue + nuxt + nodejs， 只需要更改 `/resume/resumeData.yaml` 配置文件，再执行`nuxt run generate`即可生成一个网页版简历
+基于vue + nuxt + nodejs， 只需要更改 `/resume/resumeData.yaml` 配置文件，再执行`npm run generate`即可生成一个网页版简历,执行`npm run deploy`可自动发布到gh-page分支
 
 [demo](https://cky917.github.io/my-resume-g)
 
