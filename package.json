@@ -16,7 +16,8 @@
   "dependencies": {
     "less": "^3.0.0-alpha.3",
     "less-loader": "^4.0.5",
-    "nuxt": "^1.0.0-rc11"
+    "nuxt": "^1.0.0-rc11",
+    "shelljs": "^0.7.8"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",

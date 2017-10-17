@@ -1,2 +1,0 @@
-webpackJsonp([1],{"1MQc":function(e,n,t){"use strict";Object.defineProperty(n,"__esModule",{value:!0});var r=t("VL3E"),s=t("46Yf"),l=s(null,r.a,!1,null,null,null);n.default=l.exports},VL3E:function(e,n,t){"use strict";var r=function(){var e=this,n=e.$createElement;return(e._self._c||n)("div",{staticClass:"resume"},[e._v("\n  404\n")])},s=[],l={render:r,staticRenderFns:s};n.a=l}});
-//# sourceMappingURL=404.52c0fe536e1726895759.js.map
