@@ -12,11 +12,7 @@
 # install dependencies
 $ npm install # Or yarn install
 
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# 生成静态页面
-$ npm run generate
+$ npm run setup
 ```
 
 配置github `./config.json`
@@ -28,13 +24,18 @@ $ npm run generate
 }
 ```
 
-初次执行时先执行
+## 编译
 
 ```bash
-npm run setup
+
+# serve with hot reload at localhost:3000
+$ npm run dev
+
+# 生成静态页面
+$ npm run generate
 ```
 
-发布到github gh-pages分支，参考的hexo -g的实现
+## 编译并发布到github gh-pages分支，参考了hexo -g的实现
 
 ```bash
 
