@@ -5,6 +5,7 @@
         <h3 class="detail-title">{{ item.title }} 
             <a v-if="item.previewLink" :href="item.previewLink" target="_black">preview</a>
             <a v-if="item.github" :href="item.github" target="_black">github</a>
+            <PreviewImg v-if="item.previewImg" :imgSrc="item.previewImg"></PreviewImg>
         </h3>
         <span class="detail-time">{{ item.time }}</span>
       </div>
@@ -18,9 +19,13 @@
 </template>
 
 <script>
+
+import PreviewImg from './previewImg'
+
 export default {
   name: 'contentDetail',
-  props: ['detailData']
+  props: ['detailData'],
+  components: { PreviewImg }
 }
 </script>
 

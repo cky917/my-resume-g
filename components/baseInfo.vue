@@ -1,8 +1,8 @@
 <template>
   <div class="base-info">
     <div class="photo">
-      <img src="~/assets/photo.png" alt="本人照片" class="photo-human"/>
-      <img src="~/assets/caton.png" alt="卡通照片" class="photo-caton"/>
+      <img :src="baseInfo.photo" alt="本人照片" class="photo-human"/>
+      <img v-if="baseInfo.catonPhoto" :src="baseInfo.catonPhoto" alt="卡通照片" class="photo-caton"/>
     </div>
     <div class="introduce">
       <h1 class="introduce-name">{{ baseInfo.name}} 的简历</h1>

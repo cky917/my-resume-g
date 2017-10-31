@@ -44,6 +44,10 @@ module.exports = {
         loader: 'file-loader'
       }
     ],
+    filenames: {
+      vendor: 'vendor.[hash].js',
+      app: 'app.[chunkhash].js'
+    },
     /*
     ** Run ESLint on save
     */
