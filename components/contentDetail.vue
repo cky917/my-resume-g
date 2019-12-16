@@ -10,7 +10,9 @@
         <span class="detail-time">{{ item.time }}</span>
       </div>
       <span class="detail-tips">{{ item.tips }}</span>
-      <pre class="detail-content">{{ item.content }}</pre>
+      <pre class="detail-content"
+        v-for="(content, index) in [].concat(item.content)"
+        :key="index">{{ content && `- ${content}` }}</pre>
       <ul class="detail-labels">
         <li v-for="label in item.labels" class="detail-label-item">{{ label }}</li>
       </ul>
@@ -64,6 +66,7 @@ export default {
         .detail-content{
             font-size:.26rem;
             color:#555;
+            text-indent: 2em; 
         }
         .detail-labels{
             margin-top:.1rem;
